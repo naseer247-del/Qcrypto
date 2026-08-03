@@ -20,5 +20,4 @@ jobs:
             -e TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }} \
             freqtradeorg/freqtrade:latest \
             trade --config /freqtrade/user_data/config.json \
-                  --strategy /freqtrade/user_data/strategy.py \
-                  --once
+                  --strategy /freqtrade/user_data/strategy.py
