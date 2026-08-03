@@ -21,5 +21,4 @@ jobs:
             freqtradeorg/freqtrade:latest \
             trade --config /freqtrade/user_data/config.json \
                   --strategy /freqtrade/user_data/strategy.py \
-                  --once \
-                  --verbosity 0
+                  --once
