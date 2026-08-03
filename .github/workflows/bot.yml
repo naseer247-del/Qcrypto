@@ -6,6 +6,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 3          # stops after 3 min – safe
     steps:
       - uses: actions/checkout@v4
       - name: Run Freqtrade
@@ -17,5 +18,5 @@ jobs:
             -e EXCHANGE_SECRET=${{ secrets.EXCHANGE_SECRET }} \
             -e TELEGRAM_TOKEN=${{ secrets.TELEGRAM_TOKEN }} \
             -e TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }} \
-            freqtradeorg/freqtrade:stable \
+            freqtradeorg/freqtrade:latest \
             trade --config /freqtrade/user_data/config.json --strategy /freqtrade/user_data/strategy.py --once
