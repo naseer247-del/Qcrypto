@@ -11,11 +11,11 @@ jobs:
       - name: Run Freqtrade
         run: |
           docker run --rm \
-            -v $(pwd):/freqtrade \
+            -v $(pwd):/freqtrade/user_data \
             -w /freqtrade \
             -e EXCHANGE_KEY=${{ secrets.EXCHANGE_KEY }} \
             -e EXCHANGE_SECRET=${{ secrets.EXCHANGE_SECRET }} \
             -e TELEGRAM_TOKEN=${{ secrets.TELEGRAM_TOKEN }} \
             -e TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }} \
             freqtradeorg/freqtrade:stable \
-            trade --config config.json --strategy strategy.py
+            trade --config /freqtrade/user_data/config.json --strategy /freqtrade/user_data/strategy.py
