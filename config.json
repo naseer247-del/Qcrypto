@@ -16,9 +16,6 @@
   "pair_whitelist": ["BTC/USDT", "ETH/USDT"],
   "pair_blacklist": [],
   "timeframe": "15m",
-  "protections": [
-    {"method": "MaxDrawdown", "lookback_period": 288, "trade_limit": 20, "stop_duration": 60, "max_allowed_drawdown": 0.15}
-  ],
   "trailing_stop": true,
   "trailing_stop_positive": 0.01,
   "trailing_stop_positive_offset": 0.02,
