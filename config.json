@@ -1,8 +1,6 @@
 {
   "exchange": {
     "name": "binance",
-    "key": "$EXCHANGE_KEY",
-    "secret": "$EXCHANGE_SECRET",
     "ccxt_config": { "enableRateLimit": true }
   },
   "max_open_trades": 2,
