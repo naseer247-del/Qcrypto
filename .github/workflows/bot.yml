@@ -4,6 +4,7 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch:
 jobs:
+  run:
       - name: Run Freqtrade
         run: |
           docker run --rm \
