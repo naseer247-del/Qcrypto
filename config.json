@@ -8,11 +8,6 @@
   "stake_amount": "dynamic",
   "tradable_balance_ratio": 0.95,
   "dry_run": true,
-  "telegram": {
-    "enabled": true,
-    "token": "$TELEGRAM_TOKEN",
-    "chat_id": "$TELEGRAM_CHAT_ID"
-  },
   "pair_whitelist": ["BTC/USDT", "ETH/USDT"],
   "pair_blacklist": [],
   "timeframe": "15m",
